@@ -1,0 +1,11 @@
+The solution is simple: always add spaces around the operators within the `calc()` function.  This ensures the calculation is parsed correctly by the browser.
+
+```css
+#myElement {
+  width: calc(100% - 50px);
+  height: calc(50vh + 20px);
+  margin: calc( (100vw - 800px)/2 ); /*Example with nested parentheses*/
+}
+```
+
+Always review your `calc()` function usage to confirm correct spacing.
